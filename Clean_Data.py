@@ -9,10 +9,10 @@ import random
 import json
 
 # Lire le csv dico qui permet de relier un numéro de station à une ville
-df = pd.read_csv('C:/Users/evank/OneDrive/Bureau/Projet_DevPlatformeENRG/Data_base_eolien/VENT/postesSynop.csv', sep=';')
+df = pd.read_csv('/Projet_ENRG/Data_base_eolien/VENT/postesSynop.csv', sep=';')
 
 # Spécifier le séparateur lors de la lecture du CSV
-data_csv = pd.read_csv('C:/Users/evank/OneDrive/Bureau/Projet_DevPlatformeENRG/Data_base_eolien/VENT/synop.202312.csv.gz', sep=';')
+data_csv = pd.read_csv('/Projet_ENRG/Data_base_eolien/VENT/synop.202312.csv.gz', sep=';')
 
 # Conserver seulement les colonnes spécifiées
 data_csv = data_csv.filter(items=['numer_sta', 'date', 'dd', 'ff', 'raf10', 'rafper', 'per'])
