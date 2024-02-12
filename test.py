@@ -33,13 +33,13 @@ merged_data = merged_data[~merged_data['numer_sta'].isin(ids_pays_non_metropoles
 grouped_data = merged_data.groupby('Nom')
 
 # Dico solaire
-
+"""
 Dico = {1300: {'2A': 'Corse du Sud', '2B': 'Haute Corse', '09': 'Ariege', '66': 'Pyrenees Orientals', '11': 'Aude',
                '34': 'Herault', '48': 'Lozere', '30': 'Gard', '07': 'Ardeche', '26': 'Drome', '05': 'Hautes Alpes',
                '84': 'Vaucluse', '13': 'Bouche du Rhone', '83': 'Var', '06': 'Alpes Maritimes',
                '04': 'Alpes de Haute Provence'},
-        1150: '31'}
-
+        1150: {'31' :}}
+"""
 NbVille = 0
 
 # Convertir la colonne 'date' en type datetime
